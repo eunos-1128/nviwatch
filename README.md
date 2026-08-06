@@ -13,7 +13,8 @@
   - [Installing and Using the Tool](#installing-and-using-the-tool)
     - [Option 1: Download Pre-built Binary](#option-1-download-pre-built-binary)
     - [Option 2: Install via Cargo](#option-2-install-via-cargo)
-    - [Option 3: Build from Source](#option-3-build-from-source)
+    - [Option 3: Install via Conda, Mamba, or Pixi](#option-3-install-via-conda-mamba-or-pixi)
+    - [Option 4: Build from Source](#option-4-build-from-source)
   - [Usage](#usage)
   - [Key Bindings](#key-bindings)
   - [View Modes](#view-modes)
@@ -188,7 +189,31 @@ If you have Rust and Cargo installed on your system, you can easily install NviW
 
 Note: Ensure you have the NVIDIA Management Library (NVML) available on your system before running NviWatch.
 
-### Option 3: Build from Source
+### Option 3: Install via Conda, Mamba, or Pixi
+
+NviWatch is also available from conda-forge for conda-based environments. The Pixi package is currently available from conda-forge on Linux only.
+
+1. With Conda:
+   ```bash
+   conda install -c conda-forge nviwatch
+   ```
+
+2. With Mamba:
+   ```bash
+   mamba install -c conda-forge nviwatch
+   ```
+
+3. With Pixi (Linux only):
+   ```bash
+   pixi global install --channel conda-forge nviwatch
+   ```
+
+4. Once installed, you can run NviWatch with:
+   ```bash
+   nviwatch
+   ```
+
+### Option 4: Build from Source
 
 To build and run NviWatch, ensure you have Rust and Cargo installed on your system. You will also need the NVIDIA Management Library (NVML) available.
 
