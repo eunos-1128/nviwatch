@@ -191,7 +191,7 @@ Note: Ensure you have the NVIDIA Management Library (NVML) available on your sys
 
 ### Option 3: Install via Conda, Mamba, or Pixi
 
-NviWatch is also available from conda-forge for conda-based environments. The Pixi package is currently available from conda-forge on Linux only.
+NviWatch is also available from conda-forge for conda-based environments.
 
 1. With Conda:
    ```bash
@@ -203,8 +203,9 @@ NviWatch is also available from conda-forge for conda-based environments. The Pi
    mamba install -c conda-forge nviwatch
    ```
 
-3. With Pixi (Linux only):
+3. With Pixi:
    ```bash
+   # Install nviwatch user-globally, not into a specific environment 
    pixi global install --channel conda-forge nviwatch
    ```
 
