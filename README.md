@@ -211,6 +211,11 @@ NviWatch is also available from conda-forge for conda-based environments.
 
 4. Once installed, you can run NviWatch with:
    ```bash
+   # conda / mamba
+   conda (or mamba) activate <your env>
+   nviwatch
+
+   # pixi
    nviwatch
    ```
 
